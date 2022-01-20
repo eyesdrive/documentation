@@ -1,0 +1,18 @@
+site_name: EyesDrive Developers Documentation
+theme:
+  name: material
+  palette:
+    primary: black
+    accent: deep purple
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+plugin:
+  - tags
+
+copyright: Copyright &copy; 2019 - 2022 EyesDrive Technologies
+
+extra:
+  generator: false
