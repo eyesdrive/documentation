@@ -1,6 +1,7 @@
 site_name: EyesDrive Developers Documentation
 theme:
   name: material
+  custom_dir: docs/overrides
   palette:
     primary: black
     accent: deep purple
@@ -16,3 +17,25 @@ copyright: Copyright &copy; 2019 - 2022 EyesDrive Technologies
 
 extra:
   generator: false
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+
+nav:
+    - Home: 'index.md'
+    - 'Understanding the eyes': 
+      - 'understanding/index.md'
+      - 'understanding/biosignals.md'
+      - 'understanding/eog.md'
+      - 'understanding/electrodes.md'
+    - 'Getting Started':
+        - 'getting-started/dependencies.md'
+        - 'getting-started/simulator.md'
+        - 'getting-started/testing.md'
+    - 'Integrate':
+      - 'Integrate via EDK': 'integrate/via-edk.md'
+      - 'Integrate via SIP': 'integrate/via-sip.md'
+      - 'Standalone integration': 'integrate/standalone.md'

@@ -1,4 +1,4 @@
-# Architecture
+# Understanding the Eyes
 
 ## Biosignals and the Electrooculogram
 
