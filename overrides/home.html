@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block tabs %}
+{{ super() }}
+<style>
+.md-header{position:initial;background-color: rgba(0,0,0,0.5)!important;color: rgba(255,255,255,0.5);}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}
+
+.eye_header{
+  background-color: black;
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url(assets/eye_closeup.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 40px);
+    display: flex;
+    align-items: flex-start;
+    padding: 40px;
+    flex-direction: column;
+    padding-right:40%;
+    justify-content: center;
+}
+.eye_header > *{
+  color:white
+}
+
+ .md-button {
+  background-color: var(--md-primary-bg-color);
+    border-color: var(--md-primary-bg-color);
+  color: var(--md-primary-bg-color); 
+    margin-right: .5rem;
+    margin-top: .5rem;
+    border: .1rem solid;
+    border-radius: .1rem;
+    color: var(--md-primary-fg-color);
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 700;
+    padding: .625em 2em;
+    transition: color 125ms,background-color 125ms,border-color 125ms;
+    font-size: .8rem;
+    line-height: 1.6;
+}
+
+.md-button:hover{
+  background-color: gray;
+}
+</style>
+
+<div class="eye_header">
+
+<h1 style="font-size:25pt">Make the world better for 2M+ people with disabilities only using their eyes.</h1>
+<h2 style="font-size:.8rem">Begin integrating your application with EyesDrive now</h2>
+<a href="understanding/" title="Installation" class="md-button md-button--primary">Get started</a>
+</div>
+
+
+{% endblock %}
+{% block content %}{% endblock %}
+{% block footer %}{% endblock %}
